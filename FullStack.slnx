@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="Application/Application.csproj" />
+  <Project Path="Data/Data.csproj" Id="4221464d-f0ce-4150-b590-cfb5475b2a5e" />
   <Project Path="Domain/Domain.csproj" />
 </Solution>
