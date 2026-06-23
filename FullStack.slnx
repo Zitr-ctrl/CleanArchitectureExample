@@ -3,6 +3,7 @@
     <File Path=".gitignore" />
   </Folder>
   <Project Path="Application/Application.csproj" />
+  <Project Path="ConsoleApp/ConsoleApp.csproj" Id="bf8fd110-0ecf-45bc-bdfd-8a7ccfd324e9" />
   <Project Path="Data/Data.csproj" Id="4221464d-f0ce-4150-b590-cfb5475b2a5e" />
   <Project Path="Domain/Domain.csproj" />
   <Project Path="Repository/Repository.csproj" />
