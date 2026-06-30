@@ -1,0 +1,16 @@
+@Backend_HostAddress = https://localhost:7004
+
+GET {{Backend_HostAddress}}/test/
+Accept: application/json
+
+###
+GET {{Backend_HostAddress}}/brand
+
+###
+
+POST {{Backend_HostAddress}}/brand
+Content-Type: application/json
+
+{
+  "name": "Una marca nueva 2"
+}
