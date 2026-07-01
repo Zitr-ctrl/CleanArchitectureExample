@@ -14,3 +14,10 @@ Content-Type: application/json
 {
   "name": "Una marca nueva 2"
 }
+###
+
+PUT {{Backend_HostAddress}}/brand/64
+Content-Type: application/json
+{
+  "name": "Una marca actualizada"
+}
