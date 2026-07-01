@@ -21,3 +21,6 @@ Content-Type: application/json
 {
   "name": "Una marca actualizada"
 }
+
+###
+DELETE {{Backend_HostAddress}}/brand/7

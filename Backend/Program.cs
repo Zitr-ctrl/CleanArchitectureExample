@@ -2,9 +2,7 @@ using Application.Abstractions;
 using Application.Brand.UseCases;
 using Data;
 using Domain;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Repository;
 using System.Text.Json;
 
@@ -20,12 +18,19 @@ builder.Services.AddDbContext<StoreContext>(options => options.UseSqlServer(conn
 builder.Services.AddTransient<IRepository<BrandEntity>, BrandRepository>();
 builder.Services.AddTransient<IUseCase<BrandEntity>, BrandUseCase>();
 
+
+// SWAGGER
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
